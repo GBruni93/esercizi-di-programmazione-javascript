@@ -12,3 +12,13 @@
 
   http://www.imparareaprogrammare.it
 */
+
+const Sec = 12560
+
+var Hour = (Sec/60)/60
+var M = (Sec - (Math.round(Hour))*60*60)/60
+var S1 =  (Math.round(M)*60) +(Math.round(Hour)*60*60)
+var S2 = Sec - S1
+
+
+console.log(Math.round(Hour),Math.round(M),S2)
